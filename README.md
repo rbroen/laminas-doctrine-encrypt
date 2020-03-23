@@ -4,7 +4,7 @@ Provides a Laminas & Doctrine 2 encryption module.
 
 # Installation
 
-    composer require rkeet/zf-doctrine-encrypt
+    composer require somecoding/laminas-doctrine-encrypt
     
 # Requirements
 
@@ -20,7 +20,7 @@ This might also be applicable ot other local installations.
 
 # Configuration
 
-## Zend Framework
+## Zend Framework / Laminas
 
 Make sure to add the module to you application configuration. In your `modules.config.php` make sure to include 
 `Keet\\Encrypt`.
