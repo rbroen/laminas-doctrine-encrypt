@@ -1,6 +1,6 @@
 {
     "name": "somecoding/laminas-doctrine-encrypt",
-    "description": "Provides property encryption and hashing for Doctrine Entities when used within Zend Framework 3.",
+    "description": "Provides property encryption and hashing for Doctrine Entities when used within Laminas",
     "keywords": [
         "zf3",
         "doctrine2",
