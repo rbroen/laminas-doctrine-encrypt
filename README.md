@@ -1,6 +1,6 @@
-# Zend Framework 3 & Doctrine Encrypt Module
+# Laminas & Doctrine Encrypt Module
 
-Provides a Zend Framework 3 & Doctrine 2 encryption module.
+Provides a Laminas & Doctrine 2 encryption module.
 
 # Installation
 
