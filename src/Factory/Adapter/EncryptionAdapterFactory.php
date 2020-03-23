@@ -5,7 +5,7 @@ namespace Keet\Encrypt\Factory\Adapter;
 use Keet\Encrypt\Adapter\EncryptionAdapter;
 use Keet\Encrypt\Exception\OptionsNotFoundException;
 use Interop\Container\ContainerInterface;
-use Zend\ServiceManager\Factory\FactoryInterface;
+use Laminas\ServiceManager\Factory\FactoryInterface;
 
 class EncryptionAdapterFactory implements FactoryInterface
 {

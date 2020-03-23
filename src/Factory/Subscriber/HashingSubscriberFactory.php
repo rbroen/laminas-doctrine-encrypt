@@ -10,7 +10,7 @@ use Keet\Encrypt\Interfaces\HashingInterface;
 use Keet\Encrypt\Options\HashingOptions;
 use Keet\Encrypt\Subscriber\HashingSubscriber;
 use Interop\Container\ContainerInterface;
-use Zend\ServiceManager\ServiceLocatorInterface;
+use Laminas\ServiceManager\ServiceLocatorInterface;
 
 class HashingSubscriberFactory extends AbstractFactory
 {

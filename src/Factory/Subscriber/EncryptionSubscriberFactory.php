@@ -9,7 +9,7 @@ use Keet\Encrypt\Interfaces\EncryptionInterface;
 use Keet\Encrypt\Options\EncryptionOptions;
 use Keet\Encrypt\Subscriber\EncryptionSubscriber;
 use Interop\Container\ContainerInterface;
-use Zend\ServiceManager\ServiceLocatorInterface;
+use Laminas\ServiceManager\ServiceLocatorInterface;
 
 class EncryptionSubscriberFactory extends AbstractFactory
 {

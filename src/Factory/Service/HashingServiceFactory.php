@@ -6,7 +6,7 @@ use Keet\Encrypt\Interfaces\HashingInterface;
 use Keet\Encrypt\Service\HashingService;
 use Exception;
 use Interop\Container\ContainerInterface;
-use Zend\ServiceManager\Factory\FactoryInterface;
+use Laminas\ServiceManager\Factory\FactoryInterface;
 
 class HashingServiceFactory implements FactoryInterface
 {

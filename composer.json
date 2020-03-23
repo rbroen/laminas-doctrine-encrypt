@@ -1,40 +1,42 @@
 {
-  "name": "rkeet/zf-doctrine-encrypt",
-  "description": "Provides property encryption and hashing for Doctrine Entities when used within Zend Framework 3.",
-  "keywords": [
-    "zf3",
-    "doctrine2",
-    "encrypt",
-    "module",
-    "zend framework 3",
-    "encryption"
-  ],
-  "homepage": "https://keet.me/",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Robin Keet",
-      "email": "robin@keet.me",
-      "homepage": "http://keet.me/"
-    }
-  ],
-  "require": {
-    "php": "^7.2 || ^7.3",
-    "ext-sodium": "*",
-    "doctrine/annotations": "^1.6",
-    "doctrine/orm": "^2.6",
-    "paragonie/halite": "^4.4",
-    "paragonie/hidden-string": "^1.0",
-    "zendframework/zend-modulemanager": "^2.8",
-    "zendframework/zend-servicemanager": "^2.7.8 || ^3.3",
-    "zendframework/zend-stdlib": "^3.2"
-  },
-  "autoload": {
-    "psr-4": {
-      "Keet\\Encrypt\\": "src/"
+    "name": "somecoding/laminas-doctrine-encrypt",
+    "description": "Provides property encryption and hashing for Doctrine Entities when used within Zend Framework 3.",
+    "keywords": [
+        "zf3",
+        "doctrine2",
+        "encrypt",
+        "module",
+        "zend framework 3",
+        "laminas",
+        "encryption"
+    ],
+    "homepage": "https://keet.me/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Robin Keet",
+            "email": "robin@keet.me",
+            "homepage": "http://keet.me/"
+        }
+    ],
+    "require": {
+        "php": "^7.2 || ^7.3",
+        "ext-sodium": "*",
+        "doctrine/annotations": "^1.6",
+        "doctrine/orm": "^2.6",
+        "paragonie/halite": "^4.4",
+        "paragonie/hidden-string": "^1.0",
+        "laminas/laminas-modulemanager": "^2.8",
+        "laminas/laminas-servicemanager": "^2.7.8 || ^3.3",
+        "laminas/laminas-stdlib": "^3.2",
+        "laminas/laminas-dependency-plugin": "^1.0"
     },
-    "classmap": [
-      "src/Module.php"
-    ]
-  }
+    "autoload": {
+        "psr-4": {
+            "Keet\\Encrypt\\": "src/"
+        },
+        "classmap": [
+            "src/Module.php"
+        ]
+    }
 }

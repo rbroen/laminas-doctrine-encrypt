@@ -6,7 +6,7 @@ use Keet\Encrypt\Interfaces\EncryptionInterface;
 use Keet\Encrypt\Service\EncryptionService;
 use Exception;
 use Interop\Container\ContainerInterface;
-use Zend\ServiceManager\Factory\FactoryInterface;
+use Laminas\ServiceManager\Factory\FactoryInterface;
 
 class EncryptionServiceFactory implements FactoryInterface
 {

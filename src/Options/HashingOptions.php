@@ -4,7 +4,7 @@ namespace Keet\Encrypt\Options;
 
 use Doctrine\Common\Annotations\Reader;
 use Keet\Encrypt\Interfaces\HashingInterface;
-use Zend\Stdlib\AbstractOptions;
+use Laminas\Stdlib\AbstractOptions;
 
 class HashingOptions extends AbstractOptions
 {
