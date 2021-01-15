@@ -1,6 +1,6 @@
 # Laminas & Doctrine Encrypt Module
 
-Provides a Laminas & Doctrine 2 encryption module.
+Provides a Laminas & Doctrine 2 encryption module. With support for Mezzio.
 
 # Installation
 
@@ -36,6 +36,22 @@ If these are filled in, it works out of the box using [Halite](https://github.co
 
 However, must be said, at the moment of writing this ReadMe, the Halite module contains duplicate `const` declarations,
 as such, you must disable your `E_NOTICE` warnings in your PHP config :(
+
+## Mezzio
+
+When using Mezzio, you will want to add the ConfigProvider to your `config/config.php` file.
+```
+    \Keet\Encrypt\ConfigProvider::class,
+```
+
+When declaring the path to your entities, be sure to pass the path(s) as an array.
+```
+    'my_entity' => [
+        'class' => AnnotationDriver::class,
+        'cache' => 'array',
+        'paths' => [ __DIR__ . '/Entity' ],
+    ],
+```
 
 ## Annotation Examples
 

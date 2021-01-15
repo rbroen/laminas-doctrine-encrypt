@@ -62,7 +62,7 @@ class HashingSubscriberFactory extends AbstractFactory
      *
      * @return string
      */
-    public function getOptionsClass()
+    public function getOptionsClass(): string
     {
         return HashingOptions::class;
     }
