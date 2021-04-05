@@ -223,7 +223,15 @@ class HashingSubscriber implements EventSubscriber
                         'nullable'   => $meta->getFieldMapping($refProperty->getName())['nullable'],
                     ];
                 } else if ($arrayKeyExists) {
-                    $refProperty->setValue($entity, $entityChangeSet[$refProperty->getName()][0]);
+                    // If the hashed value does not match the new value, then use a new hash, else use the old hash
+                    $oldHashedValue = $entityChangeSet[$refProperty->getName()][0];
+                    $newNonHashedValue = $entityChangeSet[$refProperty->getName()][1];
+                    $valueIsChanged = $this->getHashor()->verify($newNonHashedValue, $oldHashedValue) === false;
+                    if ($valueIsChanged) {
+                        $refProperty->setValue($entity, $this->getHashor()->hash($newNonHashedValue));
+                    } else {
+                        $refProperty->setValue($entity, $entityChangeSet[$refProperty->getName()][0]);
+                    }
                 }
             }
         }
