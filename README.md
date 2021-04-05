@@ -44,7 +44,7 @@ When using Mezzio, you will want to add the ConfigProvider to your `config/confi
     \Keet\Encrypt\ConfigProvider::class,
 ```
 
-When declaring the path to your entities, be sure to pass the path(s) as an array.
+When declaring the path to your entities (likely the file with `App\ConfigProvider`), be sure to pass the path(s) as an array.
 ```
     'my_entity' => [
         'class' => AnnotationDriver::class,
